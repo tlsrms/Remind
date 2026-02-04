@@ -97,3 +97,38 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# MCP (Model Context Protocol) related files
+# MCP server executable and cache files
+/Library/mcp-server/
+/Temp/mcp-server/
+*.mcp.log
+*.mcp.cache
+
+# MCP package cache (already covered by /Library/ but explicit for clarity)
+/Library/PackageCache/com.ivanmurzak.unity.mcp*/
+
+# MCP user-specific settings (if any exist in UserSettings)
+/UserSettings/mcp-*.asset
+/UserSettings/MCP*.json
+
+# MCP environment-specific configurations (if using .env files)
+.env.mcp
+.mcp.env
+
+# MCP server process IDs and lock files
+*.mcp.pid
+*.mcp.lock
+
+# Personal settings
+.gemini/
+.vscode/
+*.slnx
+
+# User requested ignores
+Assets/CustomDocs/
+Assets/CustomDocs.meta
+
+# Paid Assets
+Assets/Layer Lab/
+Assets/Layer Lab.meta

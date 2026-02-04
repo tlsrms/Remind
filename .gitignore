@@ -124,6 +124,7 @@ InitTestScene*.unity*
 .gemini/
 .vscode/
 *.slnx
+GEMINI.md
 
 # User requested ignores
 Assets/CustomDocs/

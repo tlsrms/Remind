@@ -38,23 +38,20 @@ public class MapManager : MonoBehaviour
         InitializePlayer();
     }
 
-    // Called by InputManager
     public void ProcessAction(Tile targetTile)
     {
         if (currentMode == ActionMode.None) return;
         if (playerUnit == null) return;
 
-        // Common Logic: Calculate Distance
         int distance = HexCoordinates.Distance(playerUnit.Location, targetTile.Coordinates);
-        int maxRange = 1; // Both Move and Recon are range 1
+        int range = 1;
 
-        if (distance > maxRange)
+        if (distance != range)
         {
-            Debug.Log($"Invalid Action: Distance is {distance} (Max {maxRange})");
+            Debug.Log($"Invalid Action: Distance is {distance} (not {range})");
             return;
         }
 
-        // Action Cost Logic (Pay Oxygen)
         Tile currentTile = GetTile(playerUnit.Location);
         bool punishHP = false;
 
@@ -70,7 +67,6 @@ public class MapManager : MonoBehaviour
             {
                 playerUnit.hasMask = false;
                 Debug.Log("Oxygen Mask Used! Prevented HP loss.");
-                // Refresh UI
                 if (UIManager.Instance != null) UIManager.Instance.UpdateMineAlert(GetNeighborMineCount(playerUnit.Location));
             }
             else

@@ -73,7 +73,6 @@ public class Tile : MonoBehaviour
 
     public void ToggleFlag()
     {
-        // Modified: Flagging allows only on REVEALED tiles per user request
         if (isRevealed)
         {
             // Cycle: None -> Safe -> Danger -> None

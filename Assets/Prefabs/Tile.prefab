@@ -159,8 +159,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   oxygen: 3
   hasMine: 0
+  isMineRevealed: 0
+  structure: 0
+  isCaptured: 0
   isRevealed: 0
   isOccupied: 0
+  flagState: 0
   fullOxygenColor: {r: 0.4245283, g: 0.25717717, b: 0.08610716, a: 1}
   emptyOxygenColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
   fogColor: {r: 0, g: 0, b: 0, a: 1}
+  dangerFlagColor: {r: 1, g: 0.2, b: 0.2, a: 1}
+  safeFlagColor: {r: 0.2, g: 1, b: 0.2, a: 1}
+  towerColor: {r: 0, g: 1, b: 1, a: 1}
+  helipadColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  radioColor: {r: 1, g: 0, b: 1, a: 1}
+  capturedColor: {r: 0, g: 0, b: 1, a: 1}
+  maskColor: {r: 0, g: 1, b: 0, a: 1}
+  detectorColor: {r: 1, g: 0.5, b: 0, a: 1}

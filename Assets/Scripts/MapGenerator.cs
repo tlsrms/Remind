@@ -376,7 +376,9 @@ public class MapGenerator : MonoBehaviour
             }
         }
         return neighbors;
-    }    private void OnDrawGizmos()
+    }
+
+    private void OnDrawGizmos()
     {
         if (grid == null || grid.Count == 0) return;
 

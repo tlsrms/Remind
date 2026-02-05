@@ -11,7 +11,6 @@ public class Unit : MonoBehaviour
     public bool hasRadio = false;
     public bool hasMask = false;
 
-    // Movement animation speed
     [SerializeField]
     private float moveSpeed = 5f;
 
@@ -24,7 +23,6 @@ public class Unit : MonoBehaviour
         hasRadio = false;
         hasMask = false;
 
-        // UI 초기화
         if (UIManager.Instance != null)
         {
             UIManager.Instance.UpdateHP(currentHP);
@@ -36,7 +34,6 @@ public class Unit : MonoBehaviour
         currentHP -= damage;
         Debug.Log($"Unit took {damage} damage! Current HP: {currentHP}");
 
-        // UI 갱신
         if (UIManager.Instance != null)
         {
             UIManager.Instance.UpdateHP(currentHP);

@@ -104,5 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Unit
   maxHP: 3
-  currentHP: 0
+  currentHP: 3
+  hasRadio: 0
+  hasMask: 0
   moveSpeed: 20
